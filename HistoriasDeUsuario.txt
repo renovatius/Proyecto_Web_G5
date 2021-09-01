@@ -1,3 +1,4 @@
+---------------------------------------------------------------------
 Nombre historia
 
 *Como: (usuario)
@@ -10,8 +11,42 @@ Criterios de aceptación de la historia de usuario
 *Cuando …el comportamiento o la acción
 *Entonces … cambios a raíz de un comportamiento
 ------------------------------------------------------------------
-
+------------------------------------------------------------------
 Conversación (Reverso de la tarjeta)
 *Detalles del negocio
 *Requerimientos no funcionales
 *Otros detalles importantes
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+
+
+
+Usuario General.
+
+Como:<Viajero>
+Quiero:<Encontrar de manera rapida el sitio mas conveniente de hospedaje>
+Para:<Reservar un hotel>
+<Agilizar el proceso de busqueda>
+
+
+Criterios de aceptacion
+*Ingreso al portal
+*Selecciono por medio de filtros el servicio o servicios que mas se adaptan a mis necesidades
+*Entonces obtengo la mejor opcion de hospedaje para mi en la ciudad de Bucaramanga
+-------------------------------------------------------------------
+
+Viajero de negocios.
+
+Como: <Ejecutivo>
+Quiero: <Encontrar el sitio que me permita hacer una reserva y modificarla según mis requerimientos>
+Para:< Tener flexibilidad para realizar cambios en mi agenda>
+<tener informacion clara de las condiciones y tarifas por cancelación>
+
+
+Criterios de aceptacion
+*Poder realizar reservacion con exito
+*consultar, modificar y/o cancelar la reservacion
+*obtener mensaje de confirmacion de cada uno de los procedimientos mencionados con las condiciones claras
+
+
+
