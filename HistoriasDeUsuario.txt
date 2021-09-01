@@ -47,6 +47,6 @@ Criterios de aceptacion
 *Poder realizar reservacion con exito
 *consultar, modificar y/o cancelar la reservacion
 *obtener mensaje de confirmacion de cada uno de los procedimientos mencionados con las condiciones claras
-
+...
 
 
