@@ -1,0 +1,17 @@
+Nombre historia
+
+*Como: (usuario)
+*Quiero: (funcionalidad) puedo
+*Para: (para que sirve que resuelve) // mejor si son dos justificaciones
+
+
+Criterios de aceptación de la historia de usuario
+*Dado que… estado previo o contexto
+*Cuando …el comportamiento o la acción
+*Entonces … cambios a raíz de un comportamiento
+------------------------------------------------------------------
+
+Conversación (Reverso de la tarjeta)
+*Detalles del negocio
+*Requerimientos no funcionales
+*Otros detalles importantes
