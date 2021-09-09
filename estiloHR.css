@@ -67,3 +67,7 @@ section{
      height: 15em;
 
  }
+
+ li img{
+     object-fit: cover;
+ }
