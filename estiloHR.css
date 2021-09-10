@@ -84,7 +84,7 @@ section{
   .cuenta h4 a{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
-    color:#5c5d63;
+    color:hsl(231, 4%, 37%);
     text-decoration: none;
     
   }
@@ -95,6 +95,68 @@ section{
       font-size: 14px;
       
   }
+  .infoPersonal{
+      width: 50%;
+      padding: 2em 1em 0em 5.5em;
+      line-height: 1em;
+      float: left;
+      
+  }
+  .infoPersonal h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color:hsl(231, 4%, 37%);
+    text-decoration: none;
+    /* line-height: 1em; */
+  }
+  .infoPersonal p{
+    float: left;
+    color:#5c5d63;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    /* line-height: 1em; */
+  }
+
+  .infoPersonal a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    float: right; 
+    color: rgb(53, 54, 105);
+    font-weight: 700; 
+  }
+
+  .infoPersonal .lineaH{
+    padding: 1.5em;
+    border-bottom: 1px solid #B2B3BE;
+  }
+
+  .infoPersonalAside{
+      float: right;
+      width: 25%;
+      height: 50%;
+      border-style: solid;
+      padding: 2em 2em 2em 2em;
+      margin: 5em 3em 0em 1em;
+      border-radius: 10px;
+      border-color:hsl(229, 7%, 70%);
+      border-width: 1px;
+      color:rgb(53, 54, 105) ;
+  }
+
+  .infoPersonalAside img{
+      background-color: gray;
+  }
+
+  .infoPersonalAside H4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+  }
+  .infoPersonalAside P{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#5c5d63;
+    line-height: 1.5em;
+  }
+
 
   body {
     padding:0;
@@ -130,7 +192,15 @@ background-size:fit;
     border-radius:10px;
     transform:translate(-50%,-50%);
     padding:60px 20px;
-    
+    float: left;
+}
+.logueoAside{
+    float: right;
+    width: 60%;
+    height: 100%;
+    margin: 2em 2em 2em 2em;
+    background-color: hsl(229, 7%, 70%);
+
 }
 
 
