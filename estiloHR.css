@@ -5,7 +5,6 @@ nav{
     width: 100%;
     height: 4em;
     box-shadow: 0px 0px 10px 2px rgba(0, 0,0, 0.15);
-    
     top: 0;
     left: 0;
     right: 0;
@@ -26,7 +25,6 @@ nav img{
 .segundoTitulos{
     overflow: hidden;
     width: 100%;
-    
     margin-top: 1em;
     border-bottom: slategray;
     
@@ -74,9 +72,29 @@ section{
  .panel-img {
     width: 100%;
     height: 100%;
+  }
+.cuentaSeccion{
+    align-items: center;
     
+}
+  .cuenta li{
+    width: 20% ;
+    height: 7em;
+  }
+
+  .cuenta h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color:#5c5d63
     
   }
+
+  .cuenta p{
+      font-family: Arial, Helvetica, sans-serif;
+      color: #9B9CA6;;
+      
+  }
+
   body {
     padding:0;
     margin:0;
@@ -84,7 +102,7 @@ section{
 background-size:fit;
   overflow:hidden;
 }
-.box{
+/* .box{
     width:300px;
     height:auto;
     background:rgba(0,0,0,0.4);
@@ -92,11 +110,29 @@ background-size:fit;
     left:50%;
      position:absolute;
     box-sizing:border-box;
-  border-radius:10px;
+    border-radius:10px;
+    transform:translate(-50%,-50%);
+    padding:60px 20px;
+    
+} */
+
+/* ALternativa clase box para que encaje el diseno */
+.box{
+    width:300px;
+    height:auto;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0,0, 0.15);
+    /* background:rgba(0,0,0,0.4); */
+    top:55%;
+    left:18%;
+    position:absolute;
+    box-sizing:border-box;
+    border-radius:10px;
     transform:translate(-50%,-50%);
     padding:60px 20px;
     
 }
+
+
 .profile{
     
     position:relative;
@@ -110,45 +146,55 @@ background-size:fit;
      padding:0 0 10px;
      text-align:center;
      font-weight:bold;
-     font-size:20px;
+     font-size:18px;
      color:rgb(53, 54, 105);
+     font-family: Arial, Helvetica, sans-serif;
  }
  .box .lable{
      margin:0;
-     padding:0;
-     color:white;
+     padding:1em 0em 0em 0em ;
+     color:rgb(53, 54, 105);
      font-weight:bold;
-     font-size:18px;
+     font-size:14px;
+     font-family: Arial, Helvetica, sans-serif;
  }
  .box input{
      width:100%;
      margin-bottom:10px;
+     border:none;
+     border-bottom: 1px solid #B2B3BE;
+     background:transparent;
+     height:40px;
+     
  }
     
 .box input[type="email"],
 .box input[type="password"]
 {
     border:none;
-    border-bottom:3px solid #ffe6ff;
+    border-bottom: 1px solid #B2B3BE;
     background:transparent;
     height:40px;
     outline:none;
-    color:#fff;
+    color: black;
     font-size:16px;
 }
 ::placeholder
 {
-    color: rgba(255, 255, 255, 0.603);
+    /* color: rgba(255, 255, 255, 0.603); */
+    color: #B2B3BE;
 }
 .box input[type="submit"]
 {
-    height:30px;
-    background-color:#3363ff;
-    border-radius:20px;
-    font-weight:bold;
-    color:black;
+    height:40px;
+    background-color:rgb(53, 54, 105);
+    border-radius:10px;
+    font-weight:100;
+    color:white;
     cursor:pointer;
     font-size:15px;
+    width: 50%;
+    float: right;
     
 }
 .box input[type="submit"]:hover
@@ -160,7 +206,10 @@ background-size:fit;
 .box .forpas
 {
     font-weight:bold;
-    color:#fff;
+    color:;
     text-decoration:none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    
     
 }
