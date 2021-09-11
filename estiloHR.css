@@ -10,7 +10,21 @@ nav{
     right: 0;
     padding: 20px;
 }
+nav button{
+    float: right;
+    text-decoration: none;
+    margin: 1em 6em 0em 0em; 
+    background-color: transparent;
+    border:none;
+  
+}
 
+#menu{
+    width: 45px;
+    height: 5px;
+    background-color: rgb(53, 54, 105);
+    margin: 6px 0;
+}
 .titulos{
     padding: 2em 2em 0em 5em;
     color: #acacac85;
@@ -78,7 +92,9 @@ section{
 }
   .cuenta li{
     width: 20% ;
-    height: 7em;
+    height: 15%;
+    padding: 2em ;
+    margin: 1em;
   }
 
   .cuenta h4 a{
@@ -94,6 +110,11 @@ section{
       color: #9B9CA6;
       font-size: 14px;
       
+  }
+
+  .cuentaIcono{
+      padding: 0em ;
+      margin: 0em;
   }
   .infoPersonal{
       width: 50%;
@@ -144,7 +165,7 @@ section{
   }
 
   .infoPersonalAside img{
-      background-color: gray;
+      /* background-color: gray; */
   }
 
   .infoPersonalAside H4{
