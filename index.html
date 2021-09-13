@@ -1,32 +1,180 @@
 <!DOCTYPE html>
-<!-- Coding By CodingNepal - youtube.com/codingnepal -->
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Animated Login Form | CodingNepal</title>
-    <link rel="stylesheet" href="Estilos/estiloHR.css">
-  </head>
-  <body>
-    <div class="center">
-      <h1>Login</h1>
-      <form method="post">
-        <div class="txt_field">
-          <input type="text" required>
-          <span></span>
-          <label>Username</label>
-        </div>
-        <div class="txt_field">
-          <input type="password" required>
-          <span></span>
-          <label>Password</label>
-        </div>
-        <div class="pass">Forgot Password?</div>
-        <input type="submit" value="Login">
-        <div class="signup_link">
-          Not a member? <a href="#">Signup</a>
-        </div>
-      </form>
-    </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binarios</title>
+    <link rel="stylesheet" href="Estilos/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <div class="container-fluid bg-light ">
+            <div class="row">
+                <div class="col-4">
+                    <img src="img/logo.png" width="30%" alt="">
+                </div>
+                <div class="col">
+                    <ul class="nav justify-content-end">
+                         <!-- CAJA DE LOGIN-->
+                        <li class="nav-item">
+                          <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary m-1 b-1" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                Login
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h5 class="modal-title" id="staticBackdropLabel">Iniciar Sesion</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="mb-3">
+                                              <label for="exampleInputEmail1" class="form-label">Usuario</label>
+                                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                              <div id="emailHelp" class="form-text">Debes ingresar con usuario Registrado</div>
+                                            </div>
+                                            <div class="mb-3">
+                                              <label for="exampleInputPassword1" class="form-label">Password</label>
+                                              <input type="password" class="form-control" id="exampleInputPassword1">
+                                            </div>
+                                            <div class="mb-3 form-check">
+                                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                              <label class="form-check-label" for="exampleCheck1">Recordarme</label>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Ingresar</button>
+                                          </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- CAJA DE REGISTRO-->
+                        <li class="nav-item">
+                           <!-- Button trigger modal -->
+                           <button type="button" class="btn btn-success m-1" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
+                            Registrate
+                        </button>
+                        
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Registrarse</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">Usuario:</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                          </div>
+                                        <div class="mb-3">
+                                          <label for="exampleInputEmail1" class="form-label">Email:</label>
+                                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                        </div>
+                                        <div class="mb-3">
+                                          <label for="exampleInputPassword1" class="form-label">Password:</label>
+                                          <input type="password" class="form-control" id="exampleInputPassword1">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleInputPassword1" class="form-label">Repeat Password:</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1">
+                                          </div>
+                                       
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                      </form>
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </li>
 
-  </body>
+                    </ul>
+                </div>
+                
+            </div>
+    
+        </div>
+    </header>
+    <div class="container-fluid bg-primary p-1 ">
+        <div class="row">
+          <div class="col-3 p-1">
+            <select class="form-control" id="inputCiudadLine2">
+                <option value="">Ciudad</option>
+                <option value="Arauca">Arauca</option>
+                <option value="Armenia">Armenia</option>
+                <option value="Barranquilla">Barranquilla</option>
+                <option value="Bogotá">Bogotá</option>
+                <option value="Bucaramanga">Bucaramanga</option>
+                <option value="Cali">Cali</option>
+                <option value="Cartagena">Cartagena</option>
+                <option value="Cúcuta">Cúcuta</option>
+                <option value="Florencia">Florencia</option>
+                <option value="Ibagué">Ibagué</option>
+                <option value="Leticia">Leticia</option>
+                <option value="Manizales">Manizales</option>
+                <option value="Medellín">Medellín</option>
+                <option value="Mitú">Mitú</option>
+                <option value="Mocoa">Mocoa</option>
+                <option value="Montería">Montería</option>
+                <option value="Neiva">Neiva</option>
+                <option value="Pasto">Pasto</option>
+                <option value="Pereira">Pereira</option>
+                <option value="Popayán">Popayán</option>
+                <option value="Puerto Carreño">Puerto Carreño</option>
+                <option value="Puerto Inírida">Puerto Inírida</option>
+                <option value="Quibdó">Quibdó</option>
+                <option value="Riohacha">Riohacha</option>
+                <option value="San Andrés">San Andrés</option>
+                <option value="San José del Guaviare">San José del Guaviare</option>
+                <option value="Santa Marta">Santa Marta</option>
+                <option value="Sincelejo">Sincelejo</option>
+                <option value="Tunja">Tunja</option>
+                <option value="Valledupar">Valledupar</option>
+                <option value="Villavicencio">Villavicencio</option>
+                <option value="Yopal">Yopal</option>
+            </select>
+          </div>
+          <div class="col-3 p-1">
+            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Palabra Clave">
+          </div>
+          <div class="col-2 p-1">
+            <input type="date" class="form-control" id="exampleInputEmail1" placeholder="Fecha Inicio">
+          </div>
+          <div class="col-2 p-1">
+            <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="col-2 p-1">
+            <select class="form-select">
+                <option selected>Cantidad de Personas</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="4">Fourth</option>
+                <option value="5">Five</option>
+                <option value="6">Six</option>
+                <option value="7">Seven</option>
+              </select>
+          </div>
+        </div>
+
+    </div>
+  
+    
+    <script src="js/bootstrap.min.js"></script>
+</body>
 </html>
