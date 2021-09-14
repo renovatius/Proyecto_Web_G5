@@ -305,3 +305,11 @@ background-size:fit;
     
     
 }
+
+#sidebar-container{
+    min-height: 100vh;
+}
+
+#sidebar-container.menu{
+    width: 18rem;
+}
