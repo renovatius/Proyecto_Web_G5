@@ -18,7 +18,7 @@ class CreateReservasTable extends Migration
             $table->tinyInteger('huespedes');
 
             $table->foreign('doc_cliente')->references('doc')->on('clientes');
-            $table->foreign('id_habitacion')->references('id')->on('habitacions');
+            $table->foreign('id_habitacion')->references('id')->on('habitaciones');
         });
     }
 

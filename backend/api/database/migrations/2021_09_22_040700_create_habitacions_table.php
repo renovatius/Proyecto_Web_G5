@@ -13,7 +13,7 @@ class CreateHabitacionsTable extends Migration
      */
     public function up()
     {
-        Schema::create('habitacions', function (Blueprint $table) {
+        Schema::create('habitaciones', function (Blueprint $table) {
             $table->id();
             $table->foreignId('id_hotel');
             $table->foreignId('id_tipo');
@@ -23,14 +23,14 @@ class CreateHabitacionsTable extends Migration
             $table->boolean('minibar');
             $table->tinyInteger('capacidad');
 
-            $table->foreign('id_hotel')->references('id')->on('hotels');
-            $table->foreign('id_tipo')->references('id')->on('tipo_habitacions');
+            $table->foreign('id_hotel')->references('id')->on('hoteles');
+            $table->foreign('id_tipo')->references('id')->on('tipo_habitaciones');
 
         });
     }
 
        public function down()
     {
-        Schema::dropIfExists('habitacions');
+        Schema::dropIfExists('habitaciones');
     }
 }
