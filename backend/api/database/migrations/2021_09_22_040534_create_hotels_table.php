@@ -15,15 +15,14 @@ class CreateHotelsTable extends Migration
     {
         Schema::create('hotels', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->string('nombre',50);
+            $table->string('ciudad',50);
+            $table->tinyinteger('estrellas');
+            $table->string('telefono',14);
+            $table->string('direccion',14);
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
     public function down()
     {
         Schema::dropIfExists('hotels');

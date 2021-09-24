@@ -15,16 +15,21 @@ class CreateHabitacionsTable extends Migration
     {
         Schema::create('habitacions', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->foreignId('id_hotel');
+            $table->foreignId('id_tipo');
+            $table->tinyInteger('piso');
+            $table->tinyInteger('numero');
+            $table->tinyInteger('precio');
+            $table->boolean('minibar');
+            $table->tinyInteger('capacidad');
+
+            $table->foreign('id_hotel')->references('id')->on('hotels');
+            $table->foreign('id_tipo')->references('id')->on('tipo_habitacions');
+
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-    public function down()
+       public function down()
     {
         Schema::dropIfExists('habitacions');
     }

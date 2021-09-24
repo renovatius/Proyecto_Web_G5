@@ -15,15 +15,11 @@ class CreateTipoHabitacionsTable extends Migration
     {
         Schema::create('tipo_habitacions', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->string('nombre',50);
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
+ 
     public function down()
     {
         Schema::dropIfExists('tipo_habitacions');
